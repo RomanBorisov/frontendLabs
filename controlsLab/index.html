@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Форма со всеми контролами</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <H1>Регистрация</H1>
+        <form>
+            <label for="fphone">Номер телефона:</title>
+            <input type="phone" name="phone" required pattern="^\((+7)|8)[1-9]{10}$">
+            <label for="fpassword">Пароль</label>
+            <input type="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <p>Выберите ваш пол:</p>
+            <div>
+                <input type="radio" id="choice1" name="contact" value="idk" />
+                <label for="contactChoice1">Не знаю</label>
+            
+                <input type="radio" id="choice2" name="contact" value="male" />
+                <label for="contactChoice2">Мужской</label>
+            
+                <input type="radio" id="choice3" name="contact" value="female" />
+                <label for="contactChoice3">Женский</label>
+            </div>
+        </form>
+    </body>
+</html>
