@@ -1,8 +1,17 @@
-h1, label, div, button, p
+html
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(lightcoral, white);
 }
-div
+form
 {
-    margin: 10px 10px 10px 10px;
+    margin: 40;
+}
+div,  button
+{
+    margin: 10px;
+}
+input
+{
+    margin: 5px;
 }
