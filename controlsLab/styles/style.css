@@ -1,0 +1,8 @@
+h1, label, div, button, p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div
+{
+    margin: 10px 10px 10px 10px;
+}

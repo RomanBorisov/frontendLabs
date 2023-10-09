@@ -2,26 +2,35 @@
     <head>
         <title>Форма со всеми контролами</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <i class="fa-duotone fa-user"></i>
         <H1>Регистрация</H1>
         <form>
-            <label for="fphone">Номер телефона:</title>
-            <input type="phone" name="phone" required pattern="^\((+7)|8)[1-9]{10}$">
-            <label for="fpassword">Пароль</label>
-            <input type="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
-            <p>Выберите ваш пол:</p>
-            <div>
-                <input type="radio" id="choice1" name="contact" value="idk" />
-                <label for="contactChoice1">Не знаю</label>
-            
-                <input type="radio" id="choice2" name="contact" value="male" />
-                <label for="contactChoice2">Мужской</label>
-            
-                <input type="radio" id="choice3" name="contact" value="female" />
-                <label for="contactChoice3">Женский</label>
-            </div>
+            <input type="file" accept="image/*, text/*" name="file"/>
+            <image name="avatar" src=file alt="Здесь могла быть ваша аватарка">
+            <label for="fphone">Номер телефона:</label>
+            <input type="phone" name="phone" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,11}$">
+                <label for="fpassword">Пароль</label>
+                <input type="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
+                <label for="fbirthdate">Дата рождения</label>
+                <input type="date" name="birthdate"><br>
+                <p>Выберите ваш пол:</p>
+                <div>
+                    <input type="radio" id="choice1" name="contact" value="idk" />
+                    <label for="contactChoice1">Не знаю</label>
+                
+                    <input type="radio" id="choice2" name="contact" value="male" />
+                    <label for="contactChoice2">Мужской</label>
+                
+                    <input type="radio" id="choice3" name="contact" value="female" />
+                    <label for="contactChoice3">Женский</label>
+                </div>
+            <br>
+            <button type="reset">Сброс</button>
+            <button type="submit">Отправить</button>
         </form>
     </body>
 </html>
