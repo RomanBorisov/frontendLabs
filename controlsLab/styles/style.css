@@ -1,7 +1,7 @@
 html
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: linear-gradient(lightcoral, white);
+    background-image: linear-gradient(red, white);
 }
 form
 {

@@ -14,25 +14,25 @@
             <div>
                 <i class="fa-solid fa-phone"></i>
                 <label for="phone">Номер телефона: ᠌ ᠌ ᠌</label>
-                <input type="phone" name="phone" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,11}$">
+                <input type="tel" name="phone" id="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,11}$" required>
             </div>
 
             <div>
                 <i class="fa-solid fa-envelope"></i>
                 <label for="email">Введите ваш email:</label>
-                <input type="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+                <input type="email" id="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
             </div>
             
             <div>
                 <i class="fa-solid fa-key"></i>
                 <label for="password">Пароль: ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌</label>
-                <input type="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <input type="password" name="password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
             </div>
             
             <div>
                 <i class="fa-solid fa-cake-candles"></i>
                 <label for="birthdate">Дата рождения: ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ ᠌ </label>
-                <input type="date" name="birthdate" required>
+                <input type="date" name="birthdate" id="birthdate" required>
             </div>
             
             <div>
@@ -56,24 +56,24 @@
 
             <div>
                 <p><i class="fa-solid fa-circle-info"></i> Дополнительная информация(необязательное поле):</p>
-                <input type="text" size="50" name="aboutInput"/>
+                <input type="text" size="50" name="aboutInput" id="aboutInput"/>
             </div>
             
             <div>
                 <i class="fa-brands fa-adversal"></i>
                 <label for="agreementCheckbox">Согласен на рассылку персональных предложений:</label>
-                <input type="checkbox" name="agreementCheckbox" required>
+                <input type="checkbox" name="agreementCheckbox" id="agreementCheckbox" required>
             </div>
             <div>
                 <i class="fa-solid fa-face-smile"></i>
                 <label for="pleasureRange">Насколько вы оцениваете эту форму:</label>
-                <input type="range" name="pleasureRange" min=1 max=10 step="1" value="5" required/>
+                <input type="range" name="pleasureRange" id="pleasureRange" min=1 max=10 step="1" value="5" required/>
             </div>
             
             <div>
                 <i class="fa-solid fa-clock"></i>
                 <label for="currentTime">Введите время заполнения:</label>
-                <input type="time" name="currentTime" required/>
+                <input type="time" name="currentTime" id="currentTime" required/>
             </div>
 
             <div>
