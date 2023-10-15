@@ -1,16 +1,161 @@
-.container
+html
 {
-    margin: 15px;
+    font-family: 'Inter', sans-serif;
 }
-.logo svg {
-    height: 1.5rem;
-    margin-top: .3rem;
-  }
-a
+
+body
 {
-    color: #8bb3fe;
+    margin: 0;
 }
-a 
+
+
+.header-top .container
 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    position: sticky;
+    align-items: center;
+    padding-top: 15;
+}
+
+.signUpButton
+{
+    width: 132.78px;
+    height: 32px;
+    background-color: black;
     color: white;
+    border-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
 }
+
+
+.header-logo
+{
+    width: max-content;
+}
+
+.nav
+{
+    margin-right: auto;
+    order: 0;
+    width: max-content;
+}
+.nav-item
+{
+    color: #4E4E4E;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.login-button, .theme-changer
+{
+    color: #4E4E4E;
+    text-decoration: none;
+    margin-right: 14px;
+    font-weight: bold;
+    font-size: 13.3;
+}
+
+.theme-changer
+{
+    margin-left: auto;
+    width: max-content;
+    margin-right: 10px;
+}
+
+.search-bar{
+    border: 1px solid #CDCDCD;
+    height: 20px;
+    width: 80px;
+    border-radius: 20px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-search
+  {
+    height: 26px;
+    width: 56px;
+    border: none;
+    font-size: 17px;
+  }
+  .header-logo
+  {
+    margin-right: 30px;
+  }
+
+  .header-bottom
+  {
+    margin-top: 15px;
+    height: 32px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #CDCDCD;
+    border-top: 1px solid #CDCDCD;
+  }
+  
+  .header-bottom-items
+  {
+    margin: 0 12.5%;
+  }
+
+  .header-bottom-item, .language-change-item
+  {
+    color: #4E4E4E;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .language-change-item
+  {
+    font-weight: bold;
+  }
+
+  .language-change-item
+  {
+    align-items: center;
+    margin-left: 993px;
+    text-decoration: none;
+  }
+
+  .main
+  {
+    margin: 0 12.5%;
+    display: flex;
+    align-items: center;
+    padding-top: 15;
+  }
+
+.up-note
+{
+    border: 1px solid #CDCDCD;
+    border-left: 4px solid #CDCDCD;
+    border-radius: 4px;
+    height: 98px;
+    width: 1408;
+    background-color: #e8f4fc;
+}
+
+.up-note-image
+{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.up-note-text
+{
+    margin-left: 5px;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
