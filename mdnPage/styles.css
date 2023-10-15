@@ -23,6 +23,7 @@ body
     padding-top: 15;
 }
 
+
 .signUpButton
 {
     width: 132.78px;
@@ -94,6 +95,18 @@ body
     margin-right: 30px;
   }
 
+  .header-bottom .container
+  {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      width: 1440px;
+      display: flex;
+      flex-flow: row wrap;
+      position: sticky;
+      align-items: center;
+  }
+
   .header-bottom
   {
     margin-top: 15px;
@@ -102,11 +115,6 @@ body
     display: flex;
     border-bottom: 1px solid #CDCDCD;
     border-top: 1px solid #CDCDCD;
-  }
-  
-  .header-bottom-items
-  {
-    margin: 0 12.5%;
   }
 
   .header-bottom-item, .language-change-item
