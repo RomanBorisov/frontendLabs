@@ -364,6 +364,8 @@ body
   width: 100%;
   height: 393.13px;
   background-color: #F9F9FB;
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-self: flex-end;
 }
@@ -390,25 +392,89 @@ body
   flex-direction: column;
 }
 
+
+.social-icons img
+{
+  margin-top: 32px;
+  margin-right: 16px;
+}
+
 .mdn-footer-logo
 {
+  margin-top: 3px;
+  margin-bottom: 10px;
   height: 17px;
   width: 48px;
 }
+.mdn-footer-logo-text
+{
+  color: #4E4E4E;
+}
+
 
 .footer-column1 a, .footer-column2 a, .footer-column3 a, .footer-column4 a
 {
-  font-size: 23.3;
+  font-size: 13.3;
   text-decoration: none;
   color: #4E4E4E;
+  margin-top: 5px;
+}
+
+.footer-column1 p, .footer-column2 p, .footer-column3 p, .footer-column4 p
+{
+  font-size: 16;
+  margin-top: 0;
+  color: #4E4E4E;
+  margin-top: 5px;
 }
 
 .footer-column1, .footer-column2, .footer-column3, .footer-column4
 {
   display: flex;
   flex-direction: column;
-  font-size: 23.3;
   text-decoration: none;
   color: #4E4E4E;
 }
 
+.footer-middle-block
+{
+  margin-top: 40px;
+  margin-bottom: 38.12px;
+  border-top: 1px solid #CDCDCD;
+  height: 57px;
+  display: flex;
+  align-items: end;
+}
+
+.footer-middle-block .container
+{
+  vertical-align: bottom;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-middle-block .container .mozilla-logo
+{
+  margin-right: 32px;
+}
+
+.footer-middle-block .container a
+{
+  margin-right: 16px;
+  font-size: 11.1;
+  color: #4E4E4E;
+}
+
+.bottom-footer-block
+{
+  height: 38.88px;
+  display: inline;
+}
+
+.bottom-footer-block a, .bottom-footer-block p
+{
+  color: #4E4E4E;
+  font-size: 11.1;
+  margin-bottom: 2px;
+}
