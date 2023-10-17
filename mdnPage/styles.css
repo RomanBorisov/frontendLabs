@@ -358,3 +358,57 @@ body
   font-weight: bold;
   text-decoration: none;
 }
+
+.footer-block
+{
+  width: 100%;
+  height: 393.13px;
+  background-color: #F9F9FB;
+  display: flex;
+  align-self: flex-end;
+}
+
+.footer
+{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 323.13px;
+  width: 1440px;
+}
+
+.footer-upper-block
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-column
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.mdn-footer-logo
+{
+  height: 17px;
+  width: 48px;
+}
+
+.footer-column1 a, .footer-column2 a, .footer-column3 a, .footer-column4 a
+{
+  font-size: 23.3;
+  text-decoration: none;
+  color: #4E4E4E;
+}
+
+.footer-column1, .footer-column2, .footer-column3, .footer-column4
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 23.3;
+  text-decoration: none;
+  color: #4E4E4E;
+}
+
