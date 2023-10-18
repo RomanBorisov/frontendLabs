@@ -16,7 +16,7 @@ body
 }
 
 @media (min-width: 1440px) {
-  
+
 .header-top
 {
   position: relative;
@@ -30,7 +30,12 @@ body
 
 .header-top .container
 {
-    
+    /*Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
+    Суть блока в том, что если его скопипастить в любое другое место, он встанет и не сломает вёрстку.
+    В данном  же случае, если его вставить куда-нибудь он будет всегда фиксированного размера, а это в свою очередь не везде нужно (в одном месте он встанет хорошо, а в другом нет) а следовательно , вёрстка сломается.
+    Вместо этого, надо создать БЭМ элемент в том месте где у тебя этот класс находится и уже ему задавать эти margin’ы, размеры и тп.
+    Я далее не буду отмечать такие места, необходимо чтобы ты сам нашел их и пофиксил
+    */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -70,6 +75,11 @@ body
 .nav-item
 {
     color: #4E4E4E;
+    /*
+     Смотри какая ситуция. У тебя на всем сайте много ссылок, которые по-сути выглядят одинаково. Правильным было бы создать 1 класс (link) и вынести туда свойства которые характерны для большинства ссылок и использовать этот класс везде где надо.
+    Так у тебя будет в разы меньше копипасты.
+   А если понадобится прмиенить другой цвет к ссылке, то тут тебе помогут БЭМ модификаторы. Это относится не только к ссылкам, а еще к другим сущностям
+    */
     text-decoration: none;
     margin-right: 25px;
 }
@@ -211,7 +221,7 @@ body
 
 .header-top .container
 {
-    
+
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -397,11 +407,11 @@ body
     position: relative;
     width: 100%;
   }
-  
-  
+
+
   .header-top .container
   {
-      
+
       margin-left: auto;
       margin-right: auto;
       width: 100%;
@@ -411,12 +421,12 @@ body
       align-items: center;
       padding-top: 15;
   }
-  
+
   .nav, .theme-changer, .search-bar, .authorize
   {
     display: none;
   }
-  
+
   .signUpButton
   {
       width: 132.78px;
@@ -428,14 +438,14 @@ body
       border-radius: 5px;
       font-weight: bolder;
   }
-  
-  
+
+
   .header-logo
   {
     margin-left: 15px;
       width: max-content;
   }
-  
+
   .nav
   {
       margin-right: auto;
@@ -448,7 +458,7 @@ body
       text-decoration: none;
       margin-right: 25px;
   }
-  
+
   .login-button, .theme-changer
   {
       color: #4E4E4E;
@@ -457,14 +467,14 @@ body
       font-weight: bold;
       font-size: 13.3;
   }
-  
+
   .theme-changer
   {
       margin-left: auto;
       width: max-content;
       margin-right: 10px;
   }
-  
+
   .search-bar{
       border: 1px solid #CDCDCD;
       height: 20px;
@@ -476,7 +486,7 @@ body
       display: flex;
       align-items: center;
     }
-  
+
     .site-search
     {
       height: 26px;
@@ -488,7 +498,7 @@ body
     {
       margin-right: 30px;
     }
-  
+
     .header-bottom .container
     {
         margin-left: auto;
@@ -499,7 +509,7 @@ body
         position: sticky;
         align-items: center;
     }
-  
+
     .header-bottom
     {
       margin-top: 15px;
@@ -510,14 +520,14 @@ body
       display: flex;
       flex-flow: wrap;
     }
-  
+
     .header-bottom-item, .language-change-item
     {
       color: #4E4E4E;
       text-decoration: none;
       font-size: 16px;
     }
-  
+
     .language-change-item
     {
       font-size: 13.3;
@@ -525,7 +535,7 @@ body
       align-items: center;
       margin-left: auto;
     }
-  
+
     .main
     {
       margin-left: auto;
@@ -535,7 +545,7 @@ body
       align-items: center;
       padding-top: 15;
     }
-  
+
   .up-note
   {
       margin-left: 13.5px;
@@ -546,20 +556,20 @@ body
       height: 98px;
       background-color: #e8f4fc;
   }
-  
+
   .up-note-image
   {
       padding-left: 25px;
       padding-top: 25px;
   }
-  
+
   .up-note-text
   {
       margin-left: 10px;
       padding-top: 20px;
       padding-right: 25px;
   }
-  
+
   .main
   {
     width: 100%;
@@ -580,7 +590,7 @@ body
   height: 32px;
   width: 88px;
   border: 1px solid #CDCDCD;
-  border-radius: 16px; 
+  border-radius: 16px;
   display: flex;
   align-items: center;
 }
