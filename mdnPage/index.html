@@ -5,37 +5,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Копия MDN</title>
         <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     </head>
     <body>
         <div class="sticky-header-container">
-            <header class="header-top">
+            <header class="header-top"> <!-- Название не самое подходящее. Название должно отображать то чем является сущность. В данном случае это просто header, а блок header-bottom - является breadcrumbs (которые я упоминал на созвоне), соответственно вот и готовы названия для блоков -->
                 <div class="container">
                     <div class="header-logo">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">
+                            <!-- В данном случае известно что это за картинка поэтому можно указать alt + указанные размеры не совпадают с реальными-->
                             <img src="resources/mdn_logo_orig.png" height="24" width="159.73">
                         </a>
                     </div>
     
                     <div class="nav">
-                        <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">References</a>
+                        <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">References</a> <!-- Не совсем понимаю, почему ссылки сделаны блоком, это же элемент блока nav + не стоит добавлять работающие ссылки, поскольку это может отвлечь немного, каждый раз переходить по ссылке, вне зависимости от контента-->
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Guides</a>
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Plus</a>
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Blog</a>
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Play</a>
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">AI Help</a>
                     </div>
-                    <div class="theme-changer">
-                        <img src="resources/themeButton.png" alt="" class="theme-icon">
-                        <a class="theme-changer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Theme</a>
+                    <div class="theme-changer"> <!-- Вот тут название неплохое-->
+                        <img src="resources/themeButton.png" alt="" class="theme-icon"> <!-- theme-changer__icon-->
+                        <a class="theme-changer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Theme</a>  <!-- theme-changer__button + это не ссылка а обычная кнопка-->
                     </div>
                    
-                    <div class="search-bar">
-                        <input type="text" class="site-search">
-                        <img class="search-icon" src="resources/search.png">
+                    <div class="search-bar"> <!-- Вижу 4 места где используется этот класс в CSS. Причем 3 из них одинаковые. И это относится не только к этому блоку. Надо почистить css файл-->
+                        <input type="text" class="site-search"> <!--search-bar__input -->
+                        <img class="search-icon" src="resources/search.png"> <!--search-bar__icon. Аналогично и в других местах -->
                     </div>
     
                     <div class="authorize">
@@ -43,18 +42,19 @@
                         <button class="signUpButton">Sign up for free</button>
                     </div>
 
-                    <div class="span-icon">
+                    <div class="span-icon"> <!-- Это называется Бургер меню-->
                         <img src="resources/spanIcon.png">
                     </div>
                 </div>
             </header>
+
             <div class="header-bottom">
                 <div class="container">
-                    <a class="header-bottom-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Веб технологии для разработчиков</a>
-                        <a>></a>
+                    <a class="header-bottom-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Веб технологии для разработчиков</a>  <!--Опять же, это элемент блока, а не блок-->
+                        <a></a>
                         <a class="header-bottom-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">HTML</a>
                         <a class="language-change-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab"><img src="resources/language.png"> Русский</a>
-                </div class="container">
+                </div class="container"> <!-- Тут не может быть класса-->
                 
                 
             </div>
@@ -80,7 +80,7 @@
                     <div class="left-menu-selector">
                         <ul class="left-menu-selector">
                             <li><a class="left-menu-selector-main" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">HTML</a></li>
-                            <li><a class="left-menu-selector-item"> </a></li>
+                            <li><a class="left-menu-selector-item"> </a></li> <!-- Визуально HTML отделен от другими, следовательно это отдельный блок. Поэтому следует вместо 1 большого списка ссылок сделать 4 отдельных списка, и добавить между ними отступ-->
                             <li><a class="left-menu-selector-main" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Уроки</a></li>
                             <li><a class="left-menu-selector-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Основы HTML</a></li>    
                             <li><a class="left-menu-selector-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab"><details><summary>Введение в HTML</summary></details></a></li>
@@ -103,12 +103,13 @@
                     </div> 
                 </div>
 
-                <div class="main-text">
+                <div class="main-text"> <!--Это больше похоже на main-content, поскольку внутри не только текст-->
                     <header>
                         <h1>HTML</h1>
                     </header>
                     
-                    <div class="first-section">
+                    <div class="first-section"> <!--Во-первых, название не самое лучшее. Оно должно отображать что из себя представляет блок. Например, читающему будет не понятно, чем отличается первая секция от второй, третья от 4й.
+                    Тем более, что визуально они никак не отличаются следовательно можно использовать везде 1 и тот же класс.-->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar nisi ac lacus dignissim, at finibus justo venenatis. 
                             Curabitur cursus sagittis volutpat. Etiam at turpis consectetur risus convallis semper non vitae lectus. Fusce pulvinar felis sed fermentum vulputate. 
                             Nam rhoncus interdum velit id lobortis. Donec id aliquet mi. Nunc scelerisque congue justo ac facilisis. Pellentesque ornare nunc ut imperdiet eleifend. 
@@ -147,7 +148,10 @@
                     </div>
                 </div>
 
-                <div class="right-menu">
+                <div class="right-menu"> <!--
+                Это похоже на sidebad. Причем левый сайдбар можно считать основным (primary-sidebar), поскольку он есть всегда и по нем происходит глобальная навигация по разделу,
+                 а правый - вторичным (seconady-sidebar), поскольку он относится непосредственно к пейдже
+                  -->
                     <h2>In this article</h2>
                     <div class="items-container">
                         <a class="first-item" href="">Руководства для начинающих</a>
