@@ -3,6 +3,12 @@ html
     font-family: 'Inter', sans-serif;
 }
 
+a
+{
+  color: #4E4E4E;
+  text-decoration: none;
+}
+
 body
 {
     margin: 0;
@@ -15,55 +21,16 @@ body
   background-color: white;
 }
 
-@media (min-width: 1440px) {
 
-.header-top
-{
-  position: relative;
-  width: 100%;
-}
-
-.span-icon
-{
-  display: none;
-}
-
-.header-top .container
-{
-    /*Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
-    Суть блока в том, что если его скопипастить в любое другое место, он встанет и не сломает вёрстку.
-    В данном  же случае, если его вставить куда-нибудь он будет всегда фиксированного размера, а это в свою очередь не везде нужно (в одном месте он встанет хорошо, а в другом нет) а следовательно , вёрстка сломается.
-    Вместо этого, надо создать БЭМ элемент в том месте где у тебя этот класс находится и уже ему задавать эти margin’ы, размеры и тп.
-    Я далее не буду отмечать такие места, необходимо чтобы ты сам нашел их и пофиксил
-    */
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    width: 1440px;
-    display: flex;
-    flex-flow: row wrap;
-    position: sticky;
-    align-items: center;
-    padding-top: 15;
-}
-
-
-.signUpButton
+.authorize__signup-button
 {
     width: 132.78px;
     height: 32px;
     background-color: black;
     color: white;
-    border-color: black;
     border: none;
     border-radius: 5px;
     font-weight: bolder;
-}
-
-
-.header-logo
-{
-    width: max-content;
 }
 
 .nav
@@ -74,23 +41,25 @@ body
 }
 .nav-item
 {
-    color: #4E4E4E;
     /*
      Смотри какая ситуция. У тебя на всем сайте много ссылок, которые по-сути выглядят одинаково. Правильным было бы создать 1 класс (link) и вынести туда свойства которые характерны для большинства ссылок и использовать этот класс везде где надо.
     Так у тебя будет в разы меньше копипасты.
    А если понадобится прмиенить другой цвет к ссылке, то тут тебе помогут БЭМ модификаторы. Это относится не только к ссылкам, а еще к другим сущностям
     */
-    text-decoration: none;
     margin-right: 25px;
 }
 
-.login-button, .theme-changer
+.authorize__login-button, .theme-changer, .theme-changer__button
 {
-    color: #4E4E4E;
-    text-decoration: none;
     margin-right: 14px;
     font-weight: bold;
     font-size: 13.3;
+}
+
+.theme-changer__button
+{
+  background-color: white;
+  border: none;
 }
 
 .theme-changer
@@ -112,7 +81,7 @@ body
     align-items: center;
   }
 
-  .site-search
+  .search-bar__input
   {
     height: 26px;
     width: 56px;
@@ -147,8 +116,6 @@ body
 
   .header-bottom-item, .language-change-item
   {
-    color: #4E4E4E;
-    text-decoration: none;
     font-size: 16px;
   }
 
@@ -158,7 +125,6 @@ body
     margin-left: auto;
     font-weight: bold;
     align-items: center;
-    text-decoration: none;
   }
 
   .main
@@ -196,6 +162,21 @@ body
     padding-right: 25px;
 }
 
+@media (min-width: 1440px) {
+
+.header
+{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+
+.burger-menu
+{
+  display: none;
+}
+
 .main
 {
   width: 1440px;
@@ -204,26 +185,44 @@ body
   display: flex;
   flex-direction: column;
 }
+
+.header .container
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 15;
 }
 
-@media (min-width: 1060px) and (max-width: 1439px)
+.footer
 {
-.header-top
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 323.13px;
+  width: 1440px;
+}
+}
+
+@media (min-width: 1093px) and (max-width: 1439px)
+{
+.header
 {
   position: relative;
   width: 100%;
 }
 
-.span-icon
+.burger-menu
 {
   display: none;
 }
 
-.header-top .container
+.header .container
 {
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -232,186 +231,33 @@ body
     padding-top: 15;
 }
 
-
-.signUpButton
+.footer
 {
-    width: 132.78px;
-    height: 32px;
-    background-color: black;
-    color: white;
-    border-color: black;
-    border: none;
-    border-radius: 5px;
-    font-weight: bolder;
-}
-
-
-.header-logo
-{
-    margin-left: 15px;
-    width: max-content;
-}
-
-.nav
-{
-    margin-right: auto;
-    order: 0;
-    width: max-content;
-}
-.nav-item
-{
-    color: #4E4E4E;
-    text-decoration: none;
-    margin-right: 25px;
-}
-
-.login-button, .theme-changer
-{
-    color: #4E4E4E;
-    text-decoration: none;
-    margin-right: 14px;
-    font-weight: bold;
-    font-size: 13.3;
-}
-
-.signUpButton
-{
-  margin-right: 15px;
-}
-
-.theme-changer
-{
-    margin-left: auto;
-    width: max-content;
-    margin-right: 10px;
-}
-
-.search-bar{
-    border: 1px solid #CDCDCD;
-    height: 20px;
-    width: 80px;
-    border-radius: 20px;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    display: flex;
-    align-items: center;
-  }
-
-  .site-search
-  {
-    height: 26px;
-    width: 56px;
-    border: none;
-    font-size: 17px;
-  }
-  .header-logo
-  {
-    margin-right: 30px;
-  }
-
-  .header-bottom .container
-  {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      position: sticky;
-      align-items: center;
-  }
-
-  .header-bottom
-  {
-    margin-top: 15px;
-    height: 32px;
-    border-bottom: 1px solid #CDCDCD;
-    border-top: 1px solid #CDCDCD;
-    align-items: center;
-    display: flex;
-    flex-flow: wrap;
-  }
-
-  .header-bottom-item, .language-change-item
-  {
-    color: #4E4E4E;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  .header-bottom-item
-  {
-    margin-left: 15px;
-  }
-
-  .language-change-item
-  {
-    margin-right: 15px;
-    font-size: 13.3;
-    font-weight: bold;
-    align-items: center;
-    margin-left: auto;
-  }
-
-  .main
-  {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 15;
-  }
-
-.up-note
-{
-    margin-left: 13.5px;
-    margin-right: 13.5px;
-    border: 1px solid #CDCDCD;
-    border-left: 4px solid #CDCDCD;
-    border-radius: 4px;
-    height: 98px;
-    background-color: #e8f4fc;
-}
-
-.up-note-image
-{
-    padding-left: 25px;
-    padding-top: 25px;
-}
-
-.up-note-text
-{
-    margin-left: 10px;
-    padding-top: 20px;
-    padding-right: 25px;
-}
-
-.main
-{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 323.13px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 }
 
-@media (max-width: 1059px)
+}
+
+@media (max-width: 1092px)
 {
-  .span-icon
+  .burger-menu
   {
     margin-left: auto;
     margin-right: 23px;
   }
-  .header-top
+  .header
   {
     position: relative;
     width: 100%;
   }
 
-
-  .header-top .container
+  .header .container
   {
-
       margin-left: auto;
       margin-right: auto;
       width: 100%;
@@ -427,156 +273,24 @@ body
     display: none;
   }
 
-  .signUpButton
-  {
-      width: 132.78px;
-      height: 32px;
-      background-color: black;
-      color: white;
-      border-color: black;
-      border: none;
-      border-radius: 5px;
-      font-weight: bolder;
-  }
-
-
-  .header-logo
-  {
-    margin-left: 15px;
-      width: max-content;
-  }
-
-  .nav
-  {
-      margin-right: auto;
-      order: 0;
-      width: max-content;
-  }
-  .nav-item
-  {
-      color: #4E4E4E;
-      text-decoration: none;
-      margin-right: 25px;
-  }
-
-  .login-button, .theme-changer
-  {
-      color: #4E4E4E;
-      text-decoration: none;
-      margin-right: 14px;
-      font-weight: bold;
-      font-size: 13.3;
-  }
-
-  .theme-changer
-  {
-      margin-left: auto;
-      width: max-content;
-      margin-right: 10px;
-  }
-
-  .search-bar{
-      border: 1px solid #CDCDCD;
-      height: 20px;
-      width: 80px;
-      border-radius: 20px;
-      padding: 6px;
-      margin-top: 8px;
-      margin-right: 16px;
-      display: flex;
-      align-items: center;
-    }
-
-    .site-search
-    {
-      height: 26px;
-      width: 56px;
-      border: none;
-      font-size: 17px;
-    }
-    .header-logo
-    {
-      margin-right: 30px;
-    }
-
-    .header-bottom .container
-    {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        position: sticky;
-        align-items: center;
-    }
-
-    .header-bottom
-    {
-      margin-top: 15px;
-      height: 32px;
-      border-bottom: 1px solid #CDCDCD;
-      border-top: 1px solid #CDCDCD;
-      align-items: center;
-      display: flex;
-      flex-flow: wrap;
-    }
-
-    .header-bottom-item, .language-change-item
-    {
-      color: #4E4E4E;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .language-change-item
-    {
-      font-size: 13.3;
-      font-weight: bold;
-      align-items: center;
-      margin-left: auto;
-    }
-
     .main
-    {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding-top: 15;
-    }
-
-  .up-note
-  {
-      margin-left: 13.5px;
-      margin-right: 13.5px;
-      border: 1px solid #CDCDCD;
-      border-left: 4px solid #CDCDCD;
-      border-radius: 4px;
-      height: 98px;
-      background-color: #e8f4fc;
-  }
-
-  .up-note-image
-  {
-      padding-left: 25px;
-      padding-top: 25px;
-  }
-
-  .up-note-text
-  {
-      margin-left: 10px;
-      padding-top: 20px;
-      padding-right: 25px;
-  }
-
-  .main
   {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: column;
   }
-  }
+
+  .footer
+{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 323.13px;
+  width: 100%;
+}
+}
 
 .main-block
 {
@@ -626,27 +340,21 @@ body
 
 .left-menu-selector-item
 {
-  text-decoration: none;
   margin-top: 10px;
-  color: #4E4E4E;
   margin-left: 0;
 }
 
 .left-menu-selector-main
 {
   font-weight: bold;
-  text-decoration: none;
-  color: #4E4E4E;
 }
 
 .left-menu-selector li
 {
-  color: #4E4E4E;
-  text-decoration: none;
   margin-top: 15px;
 }
 
-.right-menu
+.right-sidebar
 {
   width: 240px;
   margin-left: 20px;
@@ -655,7 +363,7 @@ body
   flex-direction: column;
 }
 
-.right-menu h2
+.right-sidebar h2
 {
   font-size: 19.2;
   font-weight: normal;
@@ -671,12 +379,11 @@ body
 
 .items-container a
 {
-  text-decoration: none;
   margin-top: 12.5px;
   margin-bottom: 12.5px;
   margin-left: 15px;
   font-size: 13.3;
-  color: #4E4E4E;
+
 }
 
 .footer-block
@@ -686,16 +393,6 @@ body
   background-color: #F9F9FB;
   display: flex;
   align-self: flex-end;
-}
-
-.footer
-{
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 323.13px;
-  width: 1440px;
 }
 
 .footer-upper-block
@@ -710,7 +407,6 @@ body
   flex-direction: column;
 }
 
-
 .social-icons img
 {
   margin-top: 32px;
@@ -724,17 +420,10 @@ body
   height: 17px;
   width: 48px;
 }
-.mdn-footer-logo-text
-{
-  color: #4E4E4E;
-}
-
 
 .footer-column1 a, .footer-column2 a, .footer-column3 a, .footer-column4 a
 {
   font-size: 13.3;
-  text-decoration: none;
-  color: #4E4E4E;
   margin-top: 5px;
 }
 
@@ -742,7 +431,6 @@ body
 {
   font-size: 16;
   margin-top: 0;
-  color: #4E4E4E;
   margin-top: 5px;
 }
 
@@ -750,8 +438,6 @@ body
 {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  color: #4E4E4E;
 }
 
 .footer-middle-block
@@ -781,7 +467,6 @@ body
 {
   margin-right: 16px;
   font-size: 11.1;
-  color: #4E4E4E;
 }
 
 .bottom-footer-block
@@ -792,7 +477,6 @@ body
 
 .bottom-footer-block a, .bottom-footer-block p
 {
-  color: #4E4E4E;
   font-size: 11.1;
   margin-bottom: 2px;
 }

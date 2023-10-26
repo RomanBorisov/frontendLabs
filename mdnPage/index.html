@@ -10,12 +10,11 @@
     </head>
     <body>
         <div class="sticky-header-container">
-            <header class="header-top"> <!-- Название не самое подходящее. Название должно отображать то чем является сущность. В данном случае это просто header, а блок header-bottom - является breadcrumbs (которые я упоминал на созвоне), соответственно вот и готовы названия для блоков -->
+            <header class="header">
                 <div class="container">
                     <div class="header-logo">
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">
-                            <!-- В данном случае известно что это за картинка поэтому можно указать alt + указанные размеры не совпадают с реальными-->
-                            <img src="resources/mdn_logo_orig.png" height="24" width="159.73">
+                            <img src="resources/mdn_logo_orig.png" alt="" height="24" width="159.74">
                         </a>
                     </div>
     
@@ -27,22 +26,22 @@
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Play</a>
                         <a class="nav-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">AI Help</a>
                     </div>
-                    <div class="theme-changer"> <!-- Вот тут название неплохое-->
-                        <img src="resources/themeButton.png" alt="" class="theme-icon"> <!-- theme-changer__icon-->
-                        <a class="theme-changer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Theme</a>  <!-- theme-changer__button + это не ссылка а обычная кнопка-->
+                    <div class="theme-changer">
+                        <img src="resources/themeButton.png" alt="" class="theme-changer__icon">
+                        <button class="theme-changer__button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Theme</a>
                     </div>
                    
                     <div class="search-bar"> <!-- Вижу 4 места где используется этот класс в CSS. Причем 3 из них одинаковые. И это относится не только к этому блоку. Надо почистить css файл-->
-                        <input type="text" class="site-search"> <!--search-bar__input -->
-                        <img class="search-icon" src="resources/search.png"> <!--search-bar__icon. Аналогично и в других местах -->
+                        <input type="text" class="search-bar__input"> <!--search-bar__input -->
+                        <img class="search-bar__icon" src="resources/search.png"> <!--search-bar__icon. Аналогично и в других местах -->
                     </div>
     
                     <div class="authorize">
-                        <a class="login-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Log in</a>
-                        <button class="signUpButton">Sign up for free</button>
+                        <a class="authorize__login-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Log in</a>
+                        <button class="authorize__signup-button">Sign up for free</button>
                     </div>
 
-                    <div class="span-icon"> <!-- Это называется Бургер меню-->
+                    <div class="burger-menu"> <!-- Это называется Бургер меню-->
                         <img src="resources/spanIcon.png">
                     </div>
                 </div>
@@ -51,10 +50,9 @@
             <div class="header-bottom">
                 <div class="container">
                     <a class="header-bottom-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">Веб технологии для разработчиков</a>  <!--Опять же, это элемент блока, а не блок-->
-                        <a></a>
                         <a class="header-bottom-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab">HTML</a>
                         <a class="language-change-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab"><img src="resources/language.png"> Русский</a>
-                </div class="container"> <!-- Тут не может быть класса-->
+                </div>
                 
                 
             </div>
@@ -148,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="right-menu"> <!--
+                <div class="right-sidebar"> <!--
                 Это похоже на sidebad. Причем левый сайдбар можно считать основным (primary-sidebar), поскольку он есть всегда и по нем происходит глобальная навигация по разделу,
                  а правый - вторичным (seconady-sidebar), поскольку он относится непосредственно к пейдже
                   -->
