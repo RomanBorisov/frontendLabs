@@ -220,10 +220,9 @@ body
 
 .header .container
 {
-
     margin-left: 20px;
     margin-right: 20px;
-    width: 100%;
+    width: 100% - 40px;
     display: flex;
     flex-flow: row wrap;
     position: sticky;
@@ -276,9 +275,14 @@ body
     .main
   {
     width: 100%;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     display: flex;
+  }
+
+  .main .left-menu
+  {
+    display: none;
   }
 
   .footer
@@ -383,7 +387,6 @@ body
   margin-bottom: 12.5px;
   margin-left: 15px;
   font-size: 13.3;
-
 }
 
 .footer-block
