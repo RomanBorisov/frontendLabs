@@ -9,6 +9,11 @@ a
   text-decoration: none;
 }
 
+button
+{
+  color: #4E4E4E;
+}
+
 body
 {
     margin: 0;
@@ -41,11 +46,6 @@ body
 }
 .nav-item
 {
-    /*
-     Смотри какая ситуция. У тебя на всем сайте много ссылок, которые по-сути выглядят одинаково. Правильным было бы создать 1 класс (link) и вынести туда свойства которые характерны для большинства ссылок и использовать этот класс везде где надо.
-    Так у тебя будет в разы меньше копипасты.
-   А если понадобится прмиенить другой цвет к ссылке, то тут тебе помогут БЭМ модификаторы. Это относится не только к ссылкам, а еще к другим сущностям
-    */
     margin-right: 25px;
 }
 
@@ -93,19 +93,37 @@ body
     margin-right: 30px;
   }
 
-  .header-bottom .container
+  .header
   {
-      margin-left: auto;
-      margin-right: auto;
-      width: 1440px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+  }
+
+  .header .container
+  {
+      width: 100%;
       display: flex;
       flex-flow: row wrap;
       position: sticky;
       align-items: center;
+      padding-top: 15;
+  }
+
+  .header-bottom .container
+  {
+    width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
   }
 
   .header-bottom
   {
+    width: 100%;
+    justify-content: center;
     margin-top: 15px;
     height: 32px;
     align-items: center;
@@ -129,7 +147,6 @@ body
 
   .main
   {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -194,23 +211,30 @@ body
     padding-top: 15;
 }
 
+.footer-block
+{
+  width: 100%;
+  justify-content: center;
+}
+
 .footer
 {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 323.13px;
   width: 1440px;
 }
 }
 
 @media (min-width: 1093px) and (max-width: 1439px)
 {
-.header
+  .main
+  {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+.header .container, .header-bottom .container
 {
-  position: relative;
-  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .burger-menu
@@ -218,28 +242,10 @@ body
   display: none;
 }
 
-.header .container
-{
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100% - 40px;
-    display: flex;
-    flex-flow: row wrap;
-    position: sticky;
-    align-items: center;
-    padding-top: 15;
-}
-
 .footer
 {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 323.13px;
   width: 100%;
 }
-
 }
 
 @media (max-width: 1092px)
@@ -247,7 +253,6 @@ body
   .burger-menu
   {
     margin-left: auto;
-    margin-right: 23px;
   }
   .header
   {
@@ -255,17 +260,11 @@ body
     width: 100%;
   }
 
-  .header .container
-  {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      position: sticky;
-      align-items: center;
-      padding-top: 15;
-  }
+  .header .container, .header-bottom .container
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
   .nav, .theme-changer, .search-bar, .authorize
   {
@@ -274,26 +273,21 @@ body
 
     .main
   {
-    width: 100%;
+    width: 100% - 40px;
     margin-left: 20px;
-    margin-right: auto;
+    margin-right: 20px;
     display: flex;
   }
 
-  .main .left-menu
+  .main .primary-sidebar
   {
     display: none;
   }
 
   .footer
-{
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 323.13px;
-  width: 100%;
-}
+  {
+    width: 100%;
+  }
 }
 
 .main-block
@@ -329,12 +323,12 @@ body
   margin-right: 3px;
 }
 
-.left-menu
+.primary-sidebar
 {
   box-sizing: border-box;
 }
 
-.left-menu-selector
+.primary-sidebar-selector
 {
   margin-left: auto;
   margin-top: 10px;
@@ -342,23 +336,23 @@ body
   width: 360.28px;
 }
 
-.left-menu-selector-item
+.primary-sidebar-selector-item
 {
   margin-top: 10px;
   margin-left: 0;
 }
 
-.left-menu-selector-main
+.primary-sidebar-selector-main
 {
   font-weight: bold;
 }
 
-.left-menu-selector li
+.primary-sidebar-selector li
 {
   margin-top: 15px;
 }
 
-.right-sidebar
+.secondary-sidebar
 {
   width: 240px;
   margin-left: 20px;
@@ -367,7 +361,7 @@ body
   flex-direction: column;
 }
 
-.right-sidebar h2
+.secondary-sidebar h2
 {
   font-size: 19.2;
   font-weight: normal;
@@ -389,9 +383,18 @@ body
   font-size: 13.3;
 }
 
+
+.footer
+{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 323.13px;
+}
+
 .footer-block
 {
-  width: 100%;
   height: 393.13px;
   background-color: #F9F9FB;
   display: flex;
