@@ -1,223 +1,283 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Копия MDN</title>
-        <link rel="preconnect" href="https://rsms.me/">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="sticky-header-container">
-            <header class="header">
-                <div class="container">
-                    <div class="header-logo">
-                        <a href="">
-                            <img src="resources/mdn_logo_orig.png" alt="" height="24" width="159.74">
-                        </a>
-                    </div>
-    
-                    <div class="nav">
-                        <a class="nav-item" href="">References</a> 
-                        <a class="nav-item" href="">Guides</a>
-                        <a class="nav-item" href="">Plus</a>
-                        <a class="nav-item" href="">Blog</a>
-                        <a class="nav-item" href="">Play</a>
-                        <a class="nav-item" href="">AI Help</a>
-                    </div>
-                    <div class="theme-changer">
-                        <img src="resources/themeButton.png" alt="" class="theme-changer__icon">
-                        <button class="theme-changer__button" href="">Theme</button>
-                    </div>
-                   
-                    <div class="search-bar"> 
-                        <input type="text" class="search-bar__input">
-                        <img class="search-bar__icon" src="resources/search.png">
-                    </div>
-    
-                    <div class="authorize">
-                        <a class="authorize__login-button" href="">Log in</a>
-                        <button class="authorize__signup-button">Sign up for free</button>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Копия MDN</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="wrapper">
+<div class="sticky-header-container wrapper__sticky-header-container">
+    <header class="sticky-header-container__header header">
+        <div class="container header__container">
+            <div class="row row--centered-y">
+                <a href="" class="header__logo">
+                    <img src="resources/mdn_logo_orig.png" alt="" height="287" width="1920" class="image">
+                </a>
 
-                    <div class="burger-menu">
-                        <img src="resources/spanIcon.png">
-                    </div>
-                </div>
-            </header>
-
-            <div class="header-bottom">
-                <div class="container">
-                    <a class="header-bottom-item" href="">Веб технологии для разработчиков</a>
-                    <p> > </p> 
-                    <a class="header-bottom-item" href="">HTML</a>
-                    <a class="language-change-item" href=""><img src="resources/language.png"> Русский</a>
+                <div class="header__nav-list nav">
+                    <a class="nav__item" href="">References</a>
+                    <a class="nav__item" href="">Guides</a>
+                    <a class="nav__item" href="">Plus</a>
+                    <a class="nav__item" href="">Blog</a>
+                    <a class="nav__item" href="">Play</a>
+                    <a class="nav__item" href="">AI Help</a>
                 </div>
             </div>
 
-          
-            
-        </div>
-
-        
-
-        <div class="main">
-            <div class="up-note">
-                <img class="up-note-image" src="resources/upnote.png">
-                <a class="up-note-text"> Эта страница была переведена с английского языка силами сообщества. Вы тоже можете внести свой вклад, присоединившись к русскоязычному сообществу MDN Web Docs.</a>
-            </div>
-
-
-            <div class="main-block">
-                <div class="primary-sidebar">
-                    <div class="filter-input">
-                        <img src="resources/filter.png" class="filter-image">
-                        <a class="filter-input-text">Filter</a>
-                    </div>
-    
-                    <div class="primary-sidebar-selector">
-                        <ul class="primary-sidebar-selector">
-                            <li><a class="primary-sidebar-selector-main" href="">HTML</a></li>
-                            <li><a class="primary-sidebar-selector-item"> </a></li> 
-                            <li><a class="primary-sidebar-selector-main" href="">Уроки</a></li>
-                            <li><a class="primary-sidebar-selector-item" href="">Основы HTML</a></li>    
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>Введение в HTML</summary></details></a></li>
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>Мультимедиа и встраивание</summary></details></a></li> 
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>HTML таблицы</summary></details></a></li> 
-                            <li><a class="primary-sidebar-selector-main" href="">Справочники</a></li>
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>HTML элементы</summary></details></a></li>
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>Глобальные атрибуты</summary></details></a></li>
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>Атрибуты</summary></details></a></li>
-                            <li><a class="primary-sidebar-selector-item" href=""><details><summary>Типы  <code><\input></code></summary></details></a></li>    
-                            <li><a class="primary-sidebar-selector-main" href="">Путеводитель</a></li>
-                            <li><a class="primary-sidebar-selector-item" href="">Категории контента</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Блочные элементы</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Строчные элементы</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Режим совместимости (Quirks Mode) и стандартный режим (Standards Mode)</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Валидация ограничений</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Microdata</a></li>  
-                            <li><a class="primary-sidebar-selector-item" href="">Microformats</a></li>  
-                        </ul>
-                    </div> 
+            <div class="row row--centered-y">
+                <div class="theme-changer">
+                    <img src="resources/themeButton.png" alt="" class="theme-changer__icon">
+                    <button class="theme-changer__button" href="">Theme</button>
                 </div>
 
-                <div class="main-content"> 
-                    <header>
-                        <h1>HTML</h1>
-                    </header>
-                    
-                    <div class="html-section">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar nisi ac lacus dignissim, at finibus justo venenatis. 
-                            Curabitur cursus sagittis volutpat. Etiam at turpis consectetur risus convallis semper non vitae lectus. Fusce pulvinar felis sed fermentum vulputate. 
-                            Nam rhoncus interdum velit id lobortis. Donec id aliquet mi. Nunc scelerisque congue justo ac facilisis. Pellentesque ornare nunc ut imperdiet eleifend. 
-                            Donec vestibulum libero eget sodales finibus. Nulla vitae euismod lacus. </p>
-                    </div>
-
-                    <div class="beginners-section">
-                        <h2>Руководства для начинающих</h2>
-                        <p>Vivamus sit amet purus sed magna condimentum bibendum a vel nibh.
-                             Nam fringilla, tellus vitae malesuada porttitor, justo ipsum sollicitudin est, a fringilla turpis nunc eu arcu.
-                              Etiam diam metus, blandit a porta nec, auctor a purus. Praesent sit amet elit ut mauris lacinia volutpat congue in est.
-                               Vivamus tincidunt interdum ante, id ultricies leo vestibulum quis. Duis tempus, dui fringilla scelerisque placerat, ligula tortor egestas leo, 
-                               id condimentum tellus orci iaculis dui. Suspendisse hendrerit lorem ex, vel viverra tellus efficitur eu. Donec vulputate lorem sed tortor varius condimentum eu lacinia leo.
-                                Suspendisse et dolor ac velit lobortis consequat. Donec metus orci, placerat vel dapibus in, tristique in ligula. Sed dictum, sem a facilisis scelerisque, 
-                                velit augue posuere nunc, at imperdiet ligula nisi auctor metus. Sed a euismod ante, id hendrerit urna.
-                             Integer ac metus at nunc luctus sollicitudin eu at turpis. Donec vehicula dui at velit vulputate, eu tempor risus aliquet. </p>
-                    </div>
-
-                    <div class="advenced-topics-section">
-                        <h2>Продвинутые темы</h2>
-                        <p>Sed scelerisque magna est, hendrerit suscipit ipsum suscipit sit amet. 
-                            Curabitur risus nulla, euismod sed efficitur vitae, congue non justo. Aliquam ac nulla ornare, dictum enim nec, bibendum sem. 
-                            Phasellus facilisis mauris quis nisl tempus, nec mattis mi auctor. Aenean laoreet risus id libero pharetra dignissim eu in diam.
-                             Sed ac arcu a metus elementum venenatis. Morbi sed pulvinar mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Vestibulum ut aliquam mauris, et auctor turpis. </p>
-                    </div>
-
-                    <div class="guide-section">
-                        <h2>Справочники</h2>
-                        <p>Nullam volutpat purus vel erat tempus tempus. Fusce hendrerit hendrerit auctor. 
-                            In iaculis nisi in urna rutrum pharetra. Vestibulum purus lacus, rutrum sed justo a, facilisis congue erat.
-                             Maecenas interdum facilisis lacus id commodo. Proin fermentum faucibus diam, ac placerat dolor egestas vitae.
-                              Maecenas posuere condimentum maximus. Nulla facilisi. Aenean in elit molestie, tincidunt sem eget, bibendum justo.
-                               Suspendisse semper neque cursus nulla eleifend, vel condimentum magna auctor.
-                             Donec ut erat sit amet dui ullamcorper tempus at sed dui. </p>
-                    </div>
+                <div class="search-bar">
+                    <input type="text" class="search-bar__input">
+                    <img class="search-bar__icon" src="resources/search.png">
                 </div>
 
-                <div class="secondary-sidebar">
-                    <h2>In this article</h2>
-                    <div class="items-container">
-                        <a class="first-item" href="">Руководства для начинающих</a>
-                        <a href="">Продвинутые темы</a>
-                        <a href="">Справочники</a>
-                        <a href="">Похожие темы</a>
-                    </div>
+                <div>
+                    <a href="">Log in</a>
+                    <button class="authorize__signup-button">Sign up for free</button>
+                </div>
+
+                <div class="burger-menu">
+                    <img src="resources/spanIcon.png">
                 </div>
             </div>
-            
+
+        </div>
+    </header>
+
+    <div class="breadcrumbs sticky-header-container__breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <div class="row">
+                <a href="">Веб технологии для разработчиков</a>
+                <span> > </span>
+                <a href="">HTML</a>
+            </div>
+
+            <a class="language-change-item" href=""><img src="resources/language.png"> Русский</a>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="page__up-note up-note container">
+        <img class="up-note__image" src="resources/upnote.png">
+        <a class="up-note__text">
+            Эта страница была переведена с английского языка силами сообщества. Вы тоже можете
+            внести свой вклад, присоединившись к русскоязычному сообществу MDN Web Docs.
+        </a>
+    </div>
+
+    <div class="page-content page__content">
+        <div class="container page-content__container">
+            <aside class="primary-sidebar">
+                <div class="filter-input">
+                    <img src="resources/filter.png" class="filter-image">
+                    <a class="filter-input__text">Filter</a>
+                </div>
+
+                <div class="primary-sidebar-selector">
+                    <ul class="primary-sidebar-selector">
+                        <li><a class="primary-sidebar-selector-main" href="">HTML</a></li>
+                        <li><a class="primary-sidebar-selector-item"> </a></li>
+                        <li><a class="primary-sidebar-selector-main" href="">Уроки</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Основы HTML</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>Введение в HTML</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>Мультимедиа и встраивание</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>HTML таблицы</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-main" href="">Справочники</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>HTML элементы</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>Глобальные атрибуты</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>Атрибуты</summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">
+                            <details>
+                                <summary>Типы <code><\input></code></summary>
+                            </details>
+                        </a></li>
+                        <li><a class="primary-sidebar-selector-main" href="">Путеводитель</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Категории контента</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Блочные элементы</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Строчные элементы</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Режим совместимости (Quirks Mode) и
+                            стандартный
+                            режим (Standards Mode)</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Валидация ограничений</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Microdata</a></li>
+                        <li><a class="primary-sidebar-selector-item" href="">Microformats</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <header>
+                    <h1>HTML</h1>
+                </header>
+
+                <div class="html-section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar nisi ac lacus
+                        dignissim, at
+                        finibus justo venenatis.
+                        Curabitur cursus sagittis volutpat. Etiam at turpis consectetur risus convallis semper non vitae
+                        lectus. Fusce pulvinar felis sed fermentum vulputate.
+                        Nam rhoncus interdum velit id lobortis. Donec id aliquet mi. Nunc scelerisque congue justo ac
+                        facilisis. Pellentesque ornare nunc ut imperdiet eleifend.
+                        Donec vestibulum libero eget sodales finibus. Nulla vitae euismod lacus. </p>
+                </div>
+
+                <div class="beginners-section">
+                    <h2>Руководства для начинающих</h2>
+                    <p>Vivamus sit amet purus sed magna condimentum bibendum a vel nibh.
+                        Nam fringilla, tellus vitae malesuada porttitor, justo ipsum sollicitudin est, a fringilla
+                        turpis
+                        nunc eu arcu.
+                        Etiam diam metus, blandit a porta nec, auctor a purus. Praesent sit amet elit ut mauris lacinia
+                        volutpat congue in est.
+                        Vivamus tincidunt interdum ante, id ultricies leo vestibulum quis. Duis tempus, dui fringilla
+                        scelerisque placerat, ligula tortor egestas leo,
+                        id condimentum tellus orci iaculis dui. Suspendisse hendrerit lorem ex, vel viverra tellus
+                        efficitur
+                        eu. Donec vulputate lorem sed tortor varius condimentum eu lacinia leo.
+                        Suspendisse et dolor ac velit lobortis consequat. Donec metus orci, placerat vel dapibus in,
+                        tristique in ligula. Sed dictum, sem a facilisis scelerisque,
+                        velit augue posuere nunc, at imperdiet ligula nisi auctor metus. Sed a euismod ante, id
+                        hendrerit
+                        urna.
+                        Integer ac metus at nunc luctus sollicitudin eu at turpis. Donec vehicula dui at velit
+                        vulputate, eu
+                        tempor risus aliquet. </p>
+                </div>
+
+                <div class="advenced-topics-section">
+                    <h2>Продвинутые темы</h2>
+                    <p>Sed scelerisque magna est, hendrerit suscipit ipsum suscipit sit amet.
+                        Curabitur risus nulla, euismod sed efficitur vitae, congue non justo. Aliquam ac nulla ornare,
+                        dictum enim nec, bibendum sem.
+                        Phasellus facilisis mauris quis nisl tempus, nec mattis mi auctor. Aenean laoreet risus id
+                        libero
+                        pharetra dignissim eu in diam.
+                        Sed ac arcu a metus elementum venenatis. Morbi sed pulvinar mauris. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Vestibulum ut aliquam mauris, et auctor turpis. </p>
+                </div>
+
+                <div class="guide-section">
+                    <h2>Справочники</h2>
+                    <p>Nullam volutpat purus vel erat tempus tempus. Fusce hendrerit hendrerit auctor.
+                        In iaculis nisi in urna rutrum pharetra. Vestibulum purus lacus, rutrum sed justo a, facilisis
+                        congue erat.
+                        Maecenas interdum facilisis lacus id commodo. Proin fermentum faucibus diam, ac placerat dolor
+                        egestas vitae.
+                        Maecenas posuere condimentum maximus. Nulla facilisi. Aenean in elit molestie, tincidunt sem
+                        eget,
+                        bibendum justo.
+                        Suspendisse semper neque cursus nulla eleifend, vel condimentum magna auctor.
+                        Donec ut erat sit amet dui ullamcorper tempus at sed dui. </p>
+                </div>
+            </main>
+
+            <aside class="secondary-sidebar">
+                <h2>In this article</h2>
+                <div class="items-container">
+                    <a class="first-item" href="">Руководства для начинающих</a>
+                    <a href="">Продвинутые темы</a>
+                    <a href="">Справочники</a>
+                    <a href="">Похожие темы</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer-upper-block">
+            <div class="logo-column">
+                <img class="mdn-footer-logo" src="resources/mdnFooterLogo.png">
+                <a class="mdn-footer-logo-text">Your blueprint for a better internet.</a>
+                <div class="social-icons">
+                    <a href=""><img class="twitter-footer-logo" src="resources/twitterLogo.png"></a>
+                    <a href=""><img class="github-footer-logo" src="resources/githubLogo.png"></a>
+                    <a href=""><img class="linkedin-footer-logo" src="resources/linkedinLogo.png"></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <p>MDN</p>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+                <a href="">Advertise with us</a>
+            </div>
+
+            <div class="column">
+                <p>Support</p>
+                <a href="">Products help</a>
+                <a href="">Report an issue</a>
+            </div>
+
+            <div class="column">
+                <p>Our communities</p>
+                <a href="">MDN Community</a>
+                <a href="">MDN Forum</a>
+                <a href="">MDN Chat</a>
+            </div>
+
+            <div class="column">
+                <p>Developers</p>
+                <a href="">Web technologies</a>
+                <a href="">Learn web development</a>
+                <a href="">MDN Plus</a>
+                <a href="">Hacks blog</a>
+            </div>
         </div>
 
-        <div class="footer-block">
-            <footer class="footer">
-                <div class="footer-upper-block">
-                    <div class="logo-column">
-                        <img class="mdn-footer-logo" src="resources/mdnFooterLogo.png">
-                        <a class="mdn-footer-logo-text">Your blueprint for a better internet.</a>
-                        <div class="social-icons">
-                            <a href=""><img class="twitter-footer-logo" src="resources/twitterLogo.png"></a>
-                            <a href=""><img class="github-footer-logo" src="resources/githubLogo.png"></a>
-                            <a href=""><img class="linkedin-footer-logo" src="resources/linkedinLogo.png"></a>
-                        </div>
-                    </div>
-    
-                    <div class="footer-column1">
-                        <p>MDN</p>
-                        <a href="">About</a>
-                        <a href="">Blog</a>
-                        <a href="">Careers</a>
-                        <a href="">Advertise with us</a>
-                    </div>
-    
-                    <div class="footer-column2">
-                        <p>Support</p>
-                        <a href="">Products help</a>
-                        <a href="">Report an issue</a>
-                    </div>
-    
-                    <div class="footer-column3">
-                        <p>Our communities</p>
-                        <a href="">MDN Community</a>
-                        <a href="">MDN Forum</a>
-                        <a href="">MDN Chat</a>
-                    </div>
-    
-                    <div class="footer-column4">
-                        <p>Developers</p>
-                        <a href="">Web technologies</a>
-                        <a href="">Learn web development</a>
-                        <a href="">MDN Plus</a>
-                        <a href="">Hacks blog</a>
-                    </div>
-                </div>
-
-                <div class="footer-middle-block">
-                    <div class="container">
-                        <img class="mozilla-logo" src="resources/mozillaLogo.png" alt="">
-                        <a href="">Website privacy notice</a>
-                        <a href="">Cookies</a>
-                        <a href="">Legal</a>
-                        <a href="">Community Participation Guidelines</a>
-                    </div>
-                </div>
-
-                <div class="bottom-footer-block">
-                    <p>Visit <a href="">Mozilla Corporation's</a> not for profit parent, the <a href="">Mozilla foundation</a>.</p>
-                    <p>Portions of this content are ©1998–2023 by individual mozilla.org contributors. Content available under <a href="">a Creative Commons license.</a></p>
-                </div>
-            </footer>
+        <div class="footer-middle-block">
+            <div class="container">
+                <img class="mozilla-logo" src="resources/mozillaLogo.png" alt="">
+                <a href="">Website privacy notice</a>
+                <a href="">Cookies</a>
+                <a href="">Legal</a>
+                <a href="">Community Participation Guidelines</a>
+            </div>
         </div>
-    </body>
+
+        <div class="bottom-footer-block">
+            <p>Visit <a href="">Mozilla Corporation's</a> not for profit parent, the <a href="">Mozilla foundation</a>.
+            </p>
+            <p>Portions of this content are ©1998–2023 by individual mozilla.org contributors. Content available under
+                <a href="">a Creative Commons license.</a></p>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
 
